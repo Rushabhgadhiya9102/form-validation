@@ -15,7 +15,7 @@
     <main>
       <section class="form-container container-fluid">
 
-       <div class="row">
+       <div class="row align-items-center">
         
         <div class="col-lg-6">
           <form id="form" class=" p-5 mt-5 ms-5 " method="post">
@@ -40,7 +40,7 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
               <div class="gender">
                 <div class="title">
                   <label class="form-label text-white fw-semibold">Gender</label>
@@ -60,7 +60,30 @@
               </div>
             </div>
 
-            <div class="col-lg-6">
+             <div class="col-lg-4">
+              <div class="mb-3 date">
+                <label for="date" class="form-label text-white fw-semibold">Game Types</label>
+
+                 <div class=" form-check">
+                  <input type="checkbox" class="form-check-input" name="hobbies" id="hobbie1" />
+                  <label class="form-check-label text-white fw-semibold" for="hobbie1">RPG</label>
+                </div>
+
+                <div class=" form-check">
+                  <input type="checkbox" class="form-check-input" name="hobbies" id="hobbie2" />
+                  <label class="form-check-label text-white fw-semibold" for="hobbie2">PVP</label>
+                </div>
+
+                <div class=" form-check">
+                  <input type="checkbox" class="form-check-input" name="hobbies" id="hobbie3" />
+                  <label class="form-check-label text-white fw-semibold" for="hobbie3">Battle Royal</label>
+                </div>
+
+                <div class="hobbieError d-none text-danger fw-semibold">Hobbies is required</div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
               <div class="mb-3 date">
                 <label for="date" class="form-label text-white fw-semibold">Date of Birth</label>
                 <input type="date" class="form-control" id="date" />
@@ -70,7 +93,7 @@
 
           </div>
 
-          <button class="btn btn-success" >Submit</button>
+          <button class="btn btn-success border" >Submit</button>
         </form>
         </div>
 
